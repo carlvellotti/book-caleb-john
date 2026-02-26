@@ -1,0 +1,11 @@
+{
+  "name": "book-caleb-john",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.37.5"
+  }
+}
