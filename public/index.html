@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOOK CALEB JOHN</title>
+  <meta name="description" content="Book Caleb John — if you're worthy. Submit your resume for judgment.">
+  <meta property="og:title" content="Book Caleb John">
+  <meta property="og:description" content="...if you're worthy. Submit your resume for judgment.">
+  <meta property="og:image" content="https://bookcalebjohn.com/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bookcalebjohn.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book Caleb John">
+  <meta name="twitter:description" content="...if you're worthy. Submit your resume for judgment.">
+  <meta name="twitter:image" content="https://bookcalebjohn.com/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,900;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -964,6 +974,58 @@
       .booking-body { grid-template-columns: 1fr; }
       .stamp { font-size: 3.5rem; right: 5%; }
       .glitch-deco { display: none; }
+
+      #landing {
+        padding: 1rem 1rem;
+        min-height: 100vh;
+        min-height: 100dvh;
+        justify-content: center;
+        gap: 0;
+      }
+      .landing-eyebrow {
+        font-size: 0.45rem;
+        margin-bottom: 0.75rem;
+      }
+      .landing-title {
+        font-size: clamp(3.5rem, 13vw, 5rem);
+        margin-bottom: 0.25rem;
+      }
+      .landing-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .eye-container {
+        margin-bottom: 0.75rem;
+      }
+      .all-seeing-eye {
+        font-size: 2.5rem;
+      }
+      .drop-zone {
+        height: 150px;
+        width: min(520px, 95vw);
+      }
+      .drop-zone-icon {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+      }
+      .drop-zone-text {
+        font-size: 1.3rem;
+      }
+      .drop-zone-subtext {
+        font-size: 0.4rem;
+        margin-top: 0.5rem;
+      }
+      .submit-btn {
+        margin-top: 1rem;
+        padding: 0.8rem 2.5rem;
+        font-size: 1.2rem;
+      }
+      .landing-warning {
+        margin-top: 1rem;
+        font-size: 0.5rem;
+        line-height: 1.6;
+        padding: 0 1rem;
+      }
     }
   </style>
 </head>
@@ -1357,7 +1419,7 @@
       if (isApproved) {
         btn.className = 'verdict-btn approved-btn';
         btn.textContent = 'PROCEED TO BOOKING \u2192';
-        btn.onclick = () => showScreen('booking');
+        btn.onclick = () => window.open('https://cal.com/caleb-john-psl/30min', '_blank');
       } else {
         btn.className = 'verdict-btn rejected-btn';
         btn.textContent = 'LEAVE IN SHAME';
